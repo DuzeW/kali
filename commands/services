@@ -1,0 +1,4 @@
+#!/bin/bash
+# Sprawdza status usługi w systemie
+systemctl status
+#działa również z dopisaniem nazwy usługi

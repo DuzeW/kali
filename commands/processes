@@ -1,0 +1,6 @@
+# Wyświetla listę aktywnych procesów
+ps
+
+# Dynamicznie pokazuje procesy i użycie zasobów
+top
+
