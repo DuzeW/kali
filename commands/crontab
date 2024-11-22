@@ -1,0 +1,18 @@
+Tak się tworzy automatyczne uruchamianie skryptu
+
+* * * * * /ścieżka/do/skryptu
+┬ ┬ ┬ ┬ ┬
+│ │ │ │ │
+│ │ │ │ └─ Dzień tygodnia (0 - 7) (0 i 7 to niedziela)
+│ │ │ └──── Miesiąc (1 - 12)
+│ │ └────── Dzień miesiąca (1 - 31)
+│ └──────── Godzina (0 - 23)
+└────────── Minuta (0 - 59)
+
+sprawdza listę poleceń
+
+crontab -l
+
+usuwa wszystkie zadania
+
+crontab -r
