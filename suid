@@ -1,0 +1,6 @@
+sprawdza uprawnienia su id
+ls -l 
+
+jako włąściciel 1000
+jako grupa właściciela 2000
+tylko właścieciel pliku może go edytować 4000

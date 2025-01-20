@@ -1,0 +1,13 @@
+robienie arch
+
+tar -cvf archive.tar katalog/
+
+rozpakowanie arch
+
+tar -xvf archive.tar
+
+dekompresja
+
+gunzip plik.txt.gz
+
+kompresja

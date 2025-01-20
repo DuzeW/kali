@@ -1,0 +1,5 @@
+find / -name "plik.txt" 2>/dev/null
+find / -iname "PLiK.Txt" 2>/dev/null
+find / -type d -name "Documents" | grep "Documents"
+find /var/log -type f -name "*.log" | grep ".log"
+find / -perm 777
