@@ -3,3 +3,4 @@ find / -iname "PLiK.Txt" 2>/dev/null
 find / -type d -name "Documents" | grep "Documents"
 find /var/log -type f -name "*.log" | grep ".log"
 find / -perm 777
+find / -type f -perm /6000 2>/dev/null

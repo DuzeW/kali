@@ -1,0 +1,1 @@
+openssl aes-256-cbc -pbkdf2 -d -in plik_enc_aes-256-cbc.bin 

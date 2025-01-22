@@ -1,0 +1,5 @@
+wget https://github.com/peass-ng/PEASS-ng/releases/latest/download/linpeas.sh
+scp linpeas.sh student@192.168.100.7:/home/student
+
+bash linpeas.sh
+

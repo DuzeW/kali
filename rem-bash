@@ -1,0 +1,6 @@
+Student: nc -lvp 10001
+Serwer: nc <IP_STUDENTA> 10001
+
+
+Serwer: nc -lvp 20002 -e /bin/bash
+Student: nc 192.168.100.6 20002

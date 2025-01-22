@@ -1,0 +1,22 @@
+ogólny 
+nmap -A <ip>
+
+lista opcji
+nmap-h
+
+skan portów
+nmap -sn
+
+skan portow TCP
+nmap -sT
+
+skanuje porty TCP i pobiera wersje
+-sV
+
+domyslne skrypty
+-sC
+
+Detekcja systemu
+
+nmap -O --osscan-guess 192.168.100.0/24
+

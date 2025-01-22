@@ -1,0 +1,8 @@
+openssl genrsa -out rsa_key 3072
+klucza prywatnego:
+openssl genrsa -out rsa_key 3072
+kluczem prywatnym:
+openssl rsa -in rsa_key -pubout -out rsa_key.pub
+Szyfrowanie:
+openssl pkeyutl -encrypt -in plik2.txt -pubin -inkey rsa_key.pub -out plik2.bin
+
