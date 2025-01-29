@@ -1,0 +1,48 @@
+weather_task:
+  description: >
+    Based on provided city, find what weather is. 
+    City: {city}
+  expected_output: >
+    current temperature, maximum temperature, minimal temperature and related weather details in provided city.
+
+attractions_task:
+  description: >
+    Based on the user's point of interest and budget, suggest interesting attractions.
+    City: {city}
+    Point of interest: {point_of_interest}
+    Budget: {budget}
+  expected_output: >
+    A few real attractions with cost in provided city.
+
+accommodation_task:
+  description: >
+    Based on the provided city, find the best existing accommodation that matches the user's budget and preferred accommodation.
+    City: {city}
+    Budget: {budget}
+    Preferred accommodation: {preferred_accommodation}
+  expected_output: >
+    A few real accommodations in the provided city with the cost per day.
+
+transport_task:
+  description: >
+    Based on the provided city, find the best existing transportation that matches the user's preferred transportation.
+    City: {city}
+    Preferred transportation {preferred_transportation}
+  expected_output: >
+    A few real transport options in the provided city with the cost per day
+
+summarizer_task:
+  description: >
+    Based on the results from the weather, attractions, accommodation, and transportation agents, provide a summary that includes the key details for the provided city.
+  expected_output: >
+    Return in form like this:
+    Weather: current temperature, maximum temperature, minimum temperature, and related weather details from weather_agent.
+    List of five attractions with cost from attractions_agent.
+    List of five accommodations with cost per day from accommodation_agent.
+    Two transport options options from transport_agent.
+
+translator_task:
+  description: >
+    Translate the summary into the user language specified by user in preferred language. The content includes weather, attractions, accommodation, and transportation results.
+  expected_output: >
+    Return translated text in the same form as you receive.

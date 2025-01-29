@@ -1,0 +1,24 @@
+## Instalacja zależności
+
+Aby zainstalować wszystkie zależności projektu, użyj poniższej komendy:
+
+```bash
+pip install -r requirements.txt
+```
+Dodaj włąsne api key w pliku .env wymagane:
+GROQ_KEY = ""
+OPENAI_KEY = ""
+CLAUDE_API_KEY = ""
+WEATHER_API_KEY = ""
+
+uruchomić main.py
+
+Specyfikacja projektu
+
+Projekt zawiera agentów:
+- Agent pogodowy używa toola weather_task aby dostarczyć zachmurzenie, opady, prędkość wiatru, temperaturę maksymalną oraz minimalną dla danego dnia
+- Agent atrakcyjny attractions_agent używa toola ... aby ...
+- Agent akomodacyjny attractions_task używa toola ... aby ...
+- Agent transportowy transport_agent używa toola ... aby ...
+- Agent summarizer_agent sumuje on oraz układa odpowiedź
+- Agent tłumaczący używa toola ... aby ...
