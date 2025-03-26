@@ -1,0 +1,106 @@
+Nmap - Skanowanie i Eksploracja Sieci
+
+Odkrywanie Hostów
+
+-Pn – Pomija sprawdzanie, czy host jest aktywny.
+
+Skanowanie Portów
+
+-sS – Stealth Scan (nie kończy trójstronnego handshake'a TCP, więc nie zostawia logów).
+
+-sT – Pełne połączenie TCP.
+
+-sU – Skanowanie UDP.
+
+-p1-20 – Skanowanie pierwszych 20 portów.
+
+-p1- – Skanowanie wszystkich portów od 1 do końca.
+
+-p- – Skanowanie całego zakresu portów.
+
+Identyfikacja Usług i Systemów
+
+-sV – Sprawdza wersje usług, łączy się i analizuje odpowiedzi.
+
+-O – Próba identyfikacji systemu operacyjnego.
+
+-sC – Uruchomienie domyślnych skryptów NSE.
+
+--script 'default or vuln' – Uruchomienie skryptów wykrywających podatności.
+
+-vvv – Trzy poziomy szczegółowości logów.
+
+Przykładowa komenda:
+
+nmap -Pn -sT -sV --script 'default or vuln' -vv -p- 172.27.27.1
+
+NSE Scripts
+
+locate .nse – Znajduje wszystkie skrypty NSE.
+
+Lepsza alternatywa dla wykrywania podatności: Nessus.
+
+Eksploatacja i Przejęcie Dostępu
+
+Bind Shell & Reverse Shell
+
+Blind Shell – Najlepsza opcja do uzyskania dostępu.
+
+GTFOBins – Narzędzie do eksploitacji binarek systemowych.
+
+Porty i Połączenia
+
+ss -lt – Nasłuchujące porty TCP.
+
+ss -lu – Nasłuchujące porty UDP.
+
+socat – Pozwala na wielokrotne połączenia, dostępny na Debianie:
+
+which socat
+
+Bezpieczeństwo i Ataki
+
+XSS (Cross-Site Scripting)
+
+Brak HttpOnly – Możliwe XSS.
+
+Przeglądarki tworza DOM z kodu źródłowego, więc należy wyświetlać kod, a nie polegać na DevTools.
+
+SSH
+
+Trudny do shackowania, ale można próbować bruteforce lub wykorzystać błędy konfiguracyjne.
+
+Sesje i Terminal
+
+Zamykanie procesów Vim:
+
+killall -9 vim
+
+Usuwanie historii poleceń:
+
+killall -9 zsh
+
+Czyszczenie historii bez odzyskiwania:
+
+shred -zu nazwa_pliku
+
+Obsługa Terminala i Sesji
+
+Screen i Tmux
+
+screen -r – Odzyskanie zamkniętej sesji.
+
+screen -d -m – Uruchomienie procesu w tle.
+
+tmux – Lepsza wersja screen, umożliwia wielokrotne sesje.
+
+Inne Przydatne Komendy
+
+watch -n 2 <komenda> – Wykonuje komendę co 2 sekundy.
+
+export TERM=xterm-256color – Ustawienie kolorów w terminalu.
+
+stty -a – Informacje o terminalu.
+
+stty rows 37 columns 83 – Dostosowanie wielkości terminala.
+

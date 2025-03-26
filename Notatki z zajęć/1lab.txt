@@ -1,0 +1,88 @@
+nmap
+
+
+
+Host discowery 
+-Pn bez sprzawdzania czy działa
+Portscan
+- sx Usługi szuka sP TCP sU UDP -sS stell scan nie zostawia logów na ostatnim kroku nie podaje ręki  TCP ale nie robi thriway hand shake 
+Version dać duże S żeby poprzedniego nie popsuć
+-sV połączy się i sprawdzi jaka to usługa
+-sS -sV jest bez sensu bo i tak poda rękę
+
+NSE Script
+-sC skrypty domyślne
+--script 'default or vuln'
+
+-vvv od 1 do 3 więcej więcej info w czasie rzeczywistym
+
+-p1-20
+skan 20 portów
+
+-p1- 
+wszystkie porty od 1 do końca
+
+p-
+od minimalnego maksymalnego
+
+-O system operacyjny
+
+$zmienna
+"" ze znakami specjalnymi
+'' bierze literkę po literce
+nmap -Pn -sT -sV --script 'default or vuln' -vv -p- 172.27.27.1
+
+locate .nse wszystkie skrypty znajdzie
+nesus wykrywa podatności lepiej
+
+czerwony kolor ma starą wersję
+
+xss
+hhtp only not set może xss
+ssh ciężko shakować
+
+przeglądarki tworzą DOM z kodu źródłowego więc wyświetlać kod a nie w dev tools
+
+ogarnąć vim a
+
+killall -9 vim zbija od razu proces 
+
+rm da się odwrócić
+shred -zu usuwa i nadpisuje 
+
+zobaczyć plik history
+
+aby nie było history killall -9 zsh
+
+echo "haslo" | su -c
+
+blind shell jest najlepszy do zrobienia albo bind shell
+
+
+gftobins pokazuje jak się łączyć
+nie kopiwoać bo ma sh a to jakaś prymitywna sh nie jest interaktywny więc można wpisywać hasło itp i wybrać port wpisywać 5 cyfrowa liczba bo niskie przywileje mogą tylko od 1024
+
+na dębianach jest socat 
+which socat
+
+jak się zatnie to wyjebać z ciasteczek sesję
+
+ss -lt nasłuchjące porty -lt listen tcp -lu udp słucha
+
+so cat jest super pozwala połączyć się kilka razy 
+
+można nie zacinać sesji uruchamiając w tle which screen albo tmux to sterydziarz screen
+screen -r odzyskuje okno które się zamknęło
+screen -d -m uruchomi to co dalej się wpisze 
+więc żeby nie zacinać skrypt do otwarchia shela 
+
+watch co 2 sekundy wykouje komendę
+
+export Term=zterm-256colors
+stty -a jak działa teminal
+source /etc/ske;/.bashrc
+stty rowsc 37 columns 83
+
+
+
+

@@ -1,0 +1,80 @@
+ls -l 'which sudo'
+
+pokazuje kto ma dostęp do sudo
+
+find / -perm 
+
+Autorans pokazuje entry pointy
+skanuje system i zapisuje co jeżeli ktoś podmienił skan
+
+virus total jest spoko
+
+cat /etc/issue pokazuje system
+
+find / -perm /6000 -type f 2>/dev/null
+
+file nazwa pokazuje ingo 
+
+/var/root
+
+find -exec sha1sum {} \; daje hashe plików
+
+systemctl status ssh 
+
+w passwd można usunąć hasło ale mega banalne to jest
+można podmienić nologin na bin/bash
+
+etc/shadow pokazuje hasła w hashu
+też tak średnio
+
+ssh -keygen
+
+pokazuje gdzie są klucze zrobione
+find / -name authorized_heys 2>/dev/null  
+
+screen -d -m uruchamia
+screen -r podgląd
+
+ippSec spoko kanał na yt
+
+sprawdzenie czy jest internet bez dnsa
+dig @8.8.8.8 -x adres drugi pokazuje od googla do czegoś innego połączenie
+
+
+socat z bash lepiej dział niż z sh sh lepiej z netcatem
+
+2>/&1 wyświetli błędy
+
+Wyjaśnienie
+0 stdin
+1 stdout
+2 stderr
+
+
+w dobrym terminalu wpisać
+stty -a
+rows i colmns ustawoć na
+stty rows 38 columns 83 np.
+echo $TERM
+export TERM=xterm-256color
+source /etc/skel/.bashrc
+
+grep -v nologin pominie no login
+
+find / -group admin 2>/dev/null
+
+
+sync synchronizacja żeby pendrive wysunąć 
+
+systemctl start ssh do uruchomienie ssh
+
+utworzyć i do wzorów porównać hashe 
+
+ctrl shift u można asci wpisać 
+
+jak uruchomić ssh bez roota w 2 połowie zajęć
+
+jak wrzucić socata
+
+
+
